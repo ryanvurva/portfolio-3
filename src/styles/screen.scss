@@ -1,7 +1,7 @@
-@import 'utility';
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-$base-text-size: 16px;
-$base-font-family: sans-serif;
+@import 'utility';
+@import 'navbar';
 
 html {
   @include full-height;
@@ -10,4 +10,26 @@ html {
 body {
   margin: 0;
   font: $base-text-size / 1 $base-font-family;
+  background-color: lighten($theme-color, 20%);
+}
+
+.App {
+
+}
+
+.Home {
+  margin: 0 auto;
+  height: 100%;
+  min-height: 90vh;
+  max-width: 1000px;
+  // background-image: url('../images/Ryan.jpg');
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  background-color: lighten($theme-color, 20%);
+
+  .Hello {
+    padding-top: 3em;
+    padding-left: 3em;
+  }
 }

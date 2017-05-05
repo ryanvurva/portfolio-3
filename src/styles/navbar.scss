@@ -1,0 +1,56 @@
+@import 'utility';
+
+header {
+  background-color: $theme-color;
+  // display: flex;
+  // justify-content: space-around;
+}
+
+.Navbar {
+  // position: absolute;
+  // z-index: 0;
+  // margin-top: 100px;
+  margin: auto;
+  // background-color: $theme-color;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-decoration: none;
+
+  h1 {
+    margin: 5px;
+  }
+
+  h1 a {
+    // margin: 5px;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($theme-color, 40%);
+    }
+  }
+
+  .Links {
+    // flex-wrap: wrap;
+
+    a {
+      // font-size: 1.3em;
+      margin-right: 5px;
+      text-decoration: none;
+      color: white;
+      // border: thin solid #ccc;
+      // border-radius: 2px;
+      // padding: 1px;
+      // background-color: darken($theme-color, 10%);
+
+      &:hover {
+        color: lighten($theme-color, 30%);
+      }
+    }
+  }
+
+
+}
