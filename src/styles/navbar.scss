@@ -1,16 +1,20 @@
 @import 'utility';
 
 header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   background-color: $theme-color;
   // display: flex;
   // justify-content: space-around;
 }
 
 .Navbar {
-  // position: absolute;
-  // z-index: 0;
   // margin-top: 100px;
-  margin: auto;
+  margin: 0 auto;
   // background-color: $theme-color;
   max-width: 1000px;
   display: flex;
@@ -34,20 +38,24 @@ header {
   }
 
   .Links {
-    // flex-wrap: wrap;
 
     a {
-      // font-size: 1.3em;
       margin-right: 5px;
-      text-decoration: none;
-      color: white;
-      // border: thin solid #ccc;
-      // border-radius: 2px;
-      // padding: 1px;
-      // background-color: darken($theme-color, 10%);
+      font-size: 1.2em;
 
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: white;
+      }
+
+      &:focus,
       &:hover {
         color: lighten($theme-color, 30%);
+      }
+
+      &:active {
+        color: lighten($theme-color, 10%);
       }
     }
   }
