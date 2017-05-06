@@ -29,7 +29,134 @@ body {
   background-color: lighten($theme-color, 20%);
 
   .Hello {
-    padding-top: 3em;
-    padding-left: 3em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+    // padding-top: 3em;
+    // padding-left: 3em;
+
+    img {
+      border: thick solid darken($theme-color, 20%);
+      border-radius: 100px;
+      animation: float 6s ease-in-out infinite;
+
+      @keyframes float {
+	      0% {
+		      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		      transform: translatey(0px);
+	      }
+	      50% {
+	      	box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		      transform: translatey(-15px);
+	      }
+	      100% {
+		      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		      transform: translatey(0px);
+	      }
+      }
+    }
+
+    .line-1{
+      position: relative;
+      top: 50%;
+      width: 6em;
+      margin: 50px auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+    }
+
+    .anim-typewriter{
+      visibility: hidden;
+      animation: typewriter 1s steps(44) 1s 1 normal both,
+        blinkTextCursor 500ms steps(44) 7 normal;
+        animation-fill-mode: forwards;
+    }
+    @keyframes typewriter{
+      from{width: 0; visibility: visible;}
+      to{width: 6em; visibility: visible;}
+    }
+    @keyframes blinkTextCursor{
+      from{border-right-color: rgba(255,255,255,.75);}
+      to{border-right-color: transparent;}
+    }
+
+    .line-2{
+      position: relative;
+      top: 50%;
+      width: 14em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+    }
+
+    .anim-typewriter-2{
+      visibility: hidden;
+      animation: typewriter-2 2.3s steps(44) 1s 1 normal both,
+        blinkTextCursor-2 500ms steps(44) infinite normal;
+        animation-fill-mode: forwards;
+        animation-delay: 3.5s;
+    }
+    @keyframes typewriter-2{
+      from{width: 0; visibility: visible;}
+      to{width: 14em; visibility: visible;}
+    }
+    @keyframes blinkTextCursor-2{
+      from{border-right-color: rgba(255,255,255,.75);}
+      to{border-right-color: transparent;}
+    }
+
+    .fancy-btn{
+      display:inline-block;
+      position:relative;
+      padding:10px 20px;
+      border:2px solid #fda;
+      color:#fda;
+      font-family:'Cabin', sans-serif;
+      font-style:italic;
+      font-size:15px;
+      text-decoration:none;
+      margin:70px auto;
+      transition: color 0.4s
+      // visibility: hidden;
+      // animation: appear 1s 1 ease;
+      // animation-fill-mode: forwards;
+
+      // @keyframes appear {
+      //   from {visibility: hidden;};
+      //   to {visibility: visible;}
+      // }
+    }
+    .fancy-btn:after{
+      content:" ";
+      border:2px solid rgba(0,0,0,0);
+      display:inline-block;
+      width:100%;
+      height:100%;
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      margin:auto;
+      transition:all 0.4s;
+    }
+    .fancy-btn:hover{
+      color:#eee
+    }
+    .fancy-btn:hover:after{
+      border:2px solid #fda;
+      width: calc(100% - 10px);
+      height: calc(100% + 10px);
+    }
   }
 }
