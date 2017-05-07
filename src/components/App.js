@@ -6,6 +6,8 @@ Switch
 
 import Navbar from './Navbar'
 import Home from './Home'
+import Skills from './Skills'
+import Contact from './Contact'
 
 class App extends Component {
   render () {
@@ -17,6 +19,8 @@ class App extends Component {
         <main>
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route path='/skills' component={Skills} />
+            <Route path='/contact' component={Contact} />
           </Switch>
         </main>
       </div>

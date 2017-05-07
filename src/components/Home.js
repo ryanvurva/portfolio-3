@@ -9,7 +9,7 @@ class Home extends Component {
         <p className='line-1 anim-typewriter'>Hi, I'm Ryan Vurva.</p>
         <p className='line-2 anim-typewriter-2'>I'm a Junior Developer</p>
         <p className='line-3 anim-typewriter-3'>in the Tampa Bay Area.</p>
-        <a href='#' className='fancy-btn'>Would you like to know more?</a>
+        {/* <a href='#' className='fancy-btn'>Would you like to know more?</a> */}
       </div>
     </div>
   }

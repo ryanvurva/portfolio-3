@@ -122,8 +122,8 @@
 
     .anim-typewriter-2{
       visibility: hidden;
-      animation: typewriter-2 1.8s steps(30) 1s 1 normal both,
-        blinkTextCursor-2 500ms steps(30) 4 normal;
+      animation: typewriter-2 1.2s steps(30) 1s 1 normal both,
+        blinkTextCursor-2 500ms steps(30) 3 normal;
         animation-fill-mode: forwards;
         animation-delay: 5s;
     }
@@ -152,10 +152,10 @@
 
     .anim-typewriter-3{
       visibility: hidden;
-      animation: typewriter-3 1.8s steps(30) 1s 1 normal both,
+      animation: typewriter-3 1.2s steps(30) 1s 1 normal both,
         blinkTextCursor-3 500ms steps(30) infinite normal;
         animation-fill-mode: forwards;
-        animation-delay: 7s;
+        animation-delay: 6.3s;
     }
     @keyframes typewriter-3{
       from{width: 0; visibility: visible;}
@@ -170,19 +170,18 @@
       display:inline-block;
       position:relative;
       padding:10px 20px;
-      border:2px solid #fda;
-      color:#fda;
+      border:2px solid $theme-color;
+      color:$theme-color;
       font-family:'Cabin', sans-serif;
       font-style:italic;
       font-size:15px;
       text-decoration:none;
       margin:70px auto;
       transition: color 0.4s;
-      // visibility: hidden;
       opacity: 0;
       animation: appear 1s 1 ease-in-out;
       animation-fill-mode: forwards;
-      animation-delay: 8s;
+      animation-delay: 9s;
 
       @keyframes appear {
         from {opacity: 0};
@@ -204,10 +203,10 @@
       transition:all 0.4s;
     }
     .fancy-btn:hover{
-      color:#eee
+      color:#ccc;
     }
     .fancy-btn:hover:after{
-      border:2px solid #fda;
+      border:2px solid lighten($theme-color, 40%);
       width: calc(100% - 10px);
       height: calc(100% + 10px);
     }

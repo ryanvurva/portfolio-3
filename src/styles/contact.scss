@@ -1,0 +1,121 @@
+@import 'utility';
+
+.Contact {
+  margin: 3em auto;
+  height: 100%;
+  min-height: 90vh;
+  max-width: 1000px;
+  font-size: 2em;
+
+  h4 {
+    text-align: center;
+    font-variant: small-caps;
+    margin: 5px;
+    color: #ccc;
+  }
+
+  .social {
+    width: 600px;
+    height: 120px;
+    margin: 0 auto;
+    font-size: 1.3em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .social-icon, .social-icon a {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+      margin: 1em auto;
+      color: #ccc;
+      font-family: $base-font-family;
+
+      a {
+        text-decoration: none;
+        color: #ccc;
+
+        &:hover {
+          animation: jello-horizontal 0.9s both;
+
+          @keyframes jello-horizontal {
+            0% {
+              transform: scale3d(1, 1, 1);
+            }
+            30% {
+              transform: scale3d(1.25, 0.75, 1);
+            }
+            40% {
+              transform: scale3d(0.75, 1.25, 1);
+            }
+            50% {
+              transform: scale3d(1.15, 0.85, 1);
+            }
+            65% {
+              transform: scale3d(0.95, 1.05, 1);
+            }
+            75% {
+              transform: scale3d(1.05, 0.95, 1);
+            }
+            100% {
+              transform: scale3d(1, 1, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .connect {
+    width: 350px;
+    border: 2px dashed darken($theme-color, 10%);
+    border-radius: 4px;
+    margin: 0 auto;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: wrap;
+
+    .connect-icon, .connect-icon a {
+      display: flex;
+      justify-content: flex-start;
+      align-items: baseline;
+      margin: .3em .3em;
+      color: #ccc;
+      font-family: $base-font-family;
+
+      p {
+        margin: 0;
+        opacity: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ccc;
+        font-family: $base-font-family;
+      }
+    }
+
+    .appear {
+      &:hover p {
+        opacity: 1;
+        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+        @keyframes tracking-in-expand {
+          0% {
+            letter-spacing: -0.5em;
+            opacity: 0;
+          }
+          40% {
+            opacity: 0.6;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

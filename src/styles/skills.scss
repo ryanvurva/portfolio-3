@@ -1,0 +1,73 @@
+@import 'utility';
+
+.Skills {
+  margin: 5em auto;
+  height: 100%;
+  min-height: 90vh;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  // flex-direction: column;
+
+  div {
+    // margin-top: 2em;
+  }
+
+  .base-languages {
+    margin: 1em auto;
+
+    img {
+      width: 20em;
+    }
+  }
+
+  .sass {
+    margin:1em auto;
+
+    img {
+      width: 15em;
+    }
+  }
+
+  .reactlogo {
+    margin:1em auto;
+
+    img {
+      width: 25em;
+    }
+  }
+
+  .mobx {
+    margin:1em auto;
+
+    img {
+      width: 10em;
+    }
+  }
+
+  .wordpress {
+    margin:1em auto;
+
+    img {
+      width: 30em;
+    }
+  }
+
+  .slack {
+    margin:1em auto;
+
+    img {
+      width: 25em;
+    }
+  }
+
+  .trello {
+    margin:1em auto;
+
+    img {
+      width: 15em;
+    }
+  }
+}

@@ -3,6 +3,8 @@
 @import 'utility';
 @import 'navbar';
 @import 'home';
+@import 'skills';
+@import 'contact';
 
 html {
   @include full-height;
