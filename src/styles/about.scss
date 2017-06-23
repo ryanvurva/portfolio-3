@@ -11,8 +11,14 @@
   background-size: cover;
   box-shadow: 0 0 20px black;
 
-  .who {
+  div {
     text-align: center;
-    font-size: 2em;
   }
+
+  .who {
+    // text-align: center;
+    font-size: 3em;
+  }
+
+
 }

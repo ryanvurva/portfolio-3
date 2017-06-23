@@ -6,6 +6,9 @@ class About extends Component {
       <div className='who'>
         Who Am I?
       </div>
+      <div className='aboutMe'>
+        Ryan is a poop head who likes to take poops and stuff.  how about you?
+      </div>
     </div>
   }
 }
