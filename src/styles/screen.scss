@@ -3,7 +3,7 @@
 @import 'utility';
 @import 'navbar';
 @import 'home';
-@import 'skills';
+// @import 'skills';
 @import 'contact';
 @import 'about';
 
@@ -18,5 +18,5 @@ body {
 }
 
 .App {
-
+  color: $theme-font-color;
 }

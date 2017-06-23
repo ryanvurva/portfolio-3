@@ -4,6 +4,7 @@ $base-font-family: 'Pathway Gothic One', sans-serif;
 $title-font-family: 'Cabin', sans-serif;
 $typewriter-font: 'Anonymous Pro', monospace;
 $theme-color: hsl(226, 23%, 36%);
+$theme-font-color: #e4e4e4;
 
 // Remove the browsers built-in styling for lists elements.
 @mixin reset-list {

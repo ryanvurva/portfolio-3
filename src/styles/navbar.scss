@@ -29,7 +29,7 @@ header {
   h1 a {
     // margin: 5px;
     font-family: 'Cabin', sans-serif;
-    color: white;
+    color: inherit;
     text-decoration: none;
 
     &:hover {
@@ -46,7 +46,7 @@ header {
       &:link,
       &:visited {
         text-decoration: none;
-        color: white;
+        color: inherit;
       }
 
       &:focus,

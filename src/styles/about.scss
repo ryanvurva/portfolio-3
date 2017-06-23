@@ -1,0 +1,18 @@
+@import 'utility';
+
+.About {
+  margin: 0 auto;
+  padding-top: 5em;
+  height: 100vh;
+  max-width: 1000px;
+  background-image: url('../images/grandcanyon2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 0 20px black;
+
+  .who {
+    text-align: center;
+    font-size: 2em;
+  }
+}
