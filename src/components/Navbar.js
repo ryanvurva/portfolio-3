@@ -6,7 +6,7 @@ class Navbar extends Component {
     return <div className='Navbar'>
       <h1><NavLink to='/'>Forward ]-[yperMedia</NavLink></h1>
       <div className='Links'>
-        <NavLink to='/skills'>skills</NavLink>
+        <NavLink to='/about-me'>about</NavLink>
         <NavLink to='/projects'>projects</NavLink>
         <NavLink to='/contact'>contact</NavLink>
         <NavLink to='/resume'>resume</NavLink>
