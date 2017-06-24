@@ -1,21 +1,32 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Route, Switch } from 'react-router-dom'
 
-import movieNight from '../images/movieNight.gif'
+import MNdesktop from './MNdesktop'
+import MNmobile from './MNmobile'
+
+// import movieNight from '../images/movieNight.gif'
 
 class Projects extends Component {
   render () {
     return <div className='Projects'>
       <div>
-        <img src={movieNight} />
+        {/* <MNdesktop /> */}
+        <Switch>
+          <Route exact path='/projects' component={MNdesktop} />
+          <Route path='/projects/mn-mobile' component={MNmobile} />
+        </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
             <div>movieNight |&nbsp;</div>
-            <div className='desktop-icon'><i className='fa fa-desktop' aria-hidden='true' />&nbsp;</div>
+            <div className='desktop-icon'>
+              <NavLink to='/projects'><i className='fa fa-desktop' aria-hidden='true' /></NavLink>
+            </div>
             <div>-</div>
-            <div className='mobile-icon'>&nbsp;<i className='fa fa-mobile' aria-hidden='true' /></div>
+            <div className='mobile-icon'>
+              <NavLink to='/projects/mn-mobile'>&nbsp;<i className='fa fa-mobile' aria-hidden='true' /></NavLink>
+            </div>
           </div>
-          <NavLink to='http://movienight.co'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> movienight.co</NavLink>
+          <NavLink to='http://movienight.co' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> movienight.co</NavLink>
         </div>
         <hr />
         <div className='projectDescription'>
