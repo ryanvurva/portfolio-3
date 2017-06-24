@@ -1,0 +1,54 @@
+@import 'utility';
+
+.Projects {
+  margin: 0 auto;
+  padding-top: 4em;
+  height: 100vh;
+  max-width: 1000px;
+
+  .projectTitle {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .section-left {
+      font-size: 4em;
+      font-variant: small-caps;
+      display: flex;
+      align-items: center;
+
+      .desktop-icon {
+        font-size: .7em;
+      }
+    }
+
+    a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.2em;
+
+      &:hover {
+        color: lighten($theme-color, 40%);
+      }
+    }
+  }
+
+  .projectDescription {
+    font-size: 1.3em;
+
+    .skills-used {
+      font-size: .8em;
+
+      span {
+        color: $theme-color;
+      }
+    }
+  }
+
+  .projectPitch {
+    font-size: 1.2em;
+    padding: 20px;
+  }
+}

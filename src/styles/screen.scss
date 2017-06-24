@@ -3,10 +3,10 @@
 @import 'utility';
 @import 'navbar';
 @import 'home';
-// @import 'skills';
 @import 'contact';
 @import 'about';
 @import 'resume';
+@import 'projects';
 
 html {
   @include full-height;
