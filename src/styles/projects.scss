@@ -16,6 +16,27 @@
     }
   }
 
+  .bistroBraavos {
+    // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .tictactoe {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+    }
+  }
+
   .projectTitle {
     margin-left: 10px;
     display: flex;

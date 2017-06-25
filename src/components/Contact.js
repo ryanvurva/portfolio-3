@@ -43,11 +43,6 @@ class Contact extends Component {
       <div><h4>directly connect to me</h4></div>
       <div className='connect'>
         <div className='connect-icon appear'>
-          <a href='http://www.slack.com' target='_blank'>
-            <i className='fa fa-slack' aria-hidden='true' /> <p>&nbsp;ryan.vurva</p>
-          </a>
-        </div>
-        <div className='connect-icon appear'>
           <a href='mailto:ryanvurva@gmail.com'>
             <i className='fa fa-envelope-o' aria-hidden='true' /> <p>&nbsp;ryanvurva@gmail.com</p>
           </a>
