@@ -50,7 +50,7 @@ class Projects extends Component {
         <div className='projectDescription'>
           <div>A Restaurant Menu designed for a project while at the Iron Yard.</div>
           <div>An Online Menu that pulls the data from an online database.  In this case it was with Google's Firebase Rest API service.</div>
-          <div className='skills-used'>&nbsp;- Designed from the ground up using : <span>CSS / SASS / React / MobX / JS / Firebase</span></div>
+          <div className='skills-used'>&nbsp;- Designed from the ground up using : <span>CSS / SASS / React / MobX / JS / graphQL</span></div>
         </div>
         <div className='projectPitch'>
           <p>"Oyesters, Clams and Cockles!  Best in the city!"</p>
@@ -62,7 +62,7 @@ class Projects extends Component {
           <div className='section-left'>
             <div>Tic-Tac-Toe</div>
           </div>
-          <NavLink to='http://tic-tac-toe.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> b@ttle-of-the-b@stards.tictactoe.com</NavLink>
+          <NavLink to='http://tic-tac-toe.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> b@ttle-of-the-b@st@rds.tictactoe.com</NavLink>
         </div>
         <hr />
         <div className='projectDescription'>
@@ -71,7 +71,7 @@ class Projects extends Component {
           <div className='skills-used'>&nbsp;- Designed from the ground up using : <span>HTML / CSS / SASS / JS</span></div>
         </div>
         <div className='projectPitch'>
-          <p>"Oyesters, Clams and Cockles!  Best in the city!"</p>
+          <p>"If only Rickon knew how to run in a zig-zag..."</p>
         </div>
       </div>
     </div>
