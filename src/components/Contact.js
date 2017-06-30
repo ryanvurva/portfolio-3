@@ -21,13 +21,13 @@ class Contact extends Component {
               <i className='fa fa-twitter' aria-hidden='true' title='twitter' />
             </a>
           </div>
-        </div>
-        <div className='social'>
           <div className='social-icon'>
             <a href='https://github.com/ryanvurva' target='_blank'>
               <i className='fa fa-github' aria-hidden='true' title='github' />
             </a>
           </div>
+        </div>
+        {/* <div className='social'>
           <div className='social-icon'>
             <a href='https://medium.com/@theeffinvurv' target='_blank'>
               <i className='fa fa-medium' aria-hidden='true' title='medium blogs' />
@@ -38,7 +38,7 @@ class Contact extends Component {
               <i className='fa fa-codepen' aria-hidden='true' title='codepen.io' />
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
       <div><h4>directly connect to me</h4></div>
       <div className='connect'>

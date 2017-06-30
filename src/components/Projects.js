@@ -10,7 +10,7 @@ import tictactoe from '../images/tictactoe.png'
 class Projects extends Component {
   render () {
     return <div className='Projects'>
-      <div className='movieNight'>
+      <div className='movieNight wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={MNdesktop} />
           <Route path='/projects/mn-mobile' component={MNmobile} />
@@ -38,7 +38,7 @@ class Projects extends Component {
           <p>"I don't know about you, but my wife and I ask each other 2 questions every day, 'What are we going to eat?' and 'What are we going to watch?'  MovieNight helps to solve one of those questions by keeping a list of movies/shows you want to watch, that your peers can offer their opinions to help you decide before you even asked!"</p>
         </div>
       </div>
-      <div className='bistroBraavos'>
+      <div className='bistroBraavos wow slideInLeft'>
         <img src={braavos} />
         <div className='projectTitle'>
           <div className='section-left'>
