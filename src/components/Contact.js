@@ -42,12 +42,12 @@ class Contact extends Component {
       </div>
       <div><h4>directly connect to me</h4></div>
       <div className='connect'>
-        <div className='connect-icon appear'>
+        <div className='connect-icon'>
           <a href='mailto:ryanvurva@gmail.com'>
             <i className='fa fa-envelope-o' aria-hidden='true' /> <p>&nbsp;ryanvurva@gmail.com</p>
           </a>
         </div>
-        <div className='connect-icon appear'>
+        <div className='connect-icon'>
           <a href='tel:3214439109' target='_blank'>
             &nbsp;&nbsp;<i className='fa fa-mobile' aria-hidden='true' /> <p>&nbsp;321.443.9109</p>
           </a>

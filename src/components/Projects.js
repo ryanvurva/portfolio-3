@@ -3,17 +3,24 @@ import { NavLink, Route, Switch } from 'react-router-dom'
 
 import MNdesktop from './MNdesktop'
 import MNmobile from './MNmobile'
+import MNdesktopGIF from './MNdesktopGIF'
+import MNmobileGIF from './MNmobileGIF'
+import BBdesktop from './BBdesktop'
+import BBdesktopGIF from './BBdesktopGIF'
 
-import braavos from '../images/bistro-braavos.gif'
+// import braavos from '../images/bistro-braavos.png'
 import tictactoe from '../images/tictactoe.png'
 
 class Projects extends Component {
   render () {
     return <div className='Projects'>
-      <div className='movieNight wow slideInRight'>
+      <div className='movieNight wow slideInUp'>
         <Switch>
           <Route exact path='/projects' component={MNdesktop} />
-          <Route path='/projects/mn-mobile' component={MNmobile} />
+          <Route exact path='/projects/mn-mobile' component={MNmobile} />
+          <Route exact path='/projects/MNdesktop-gif' component={MNdesktopGIF} />
+          <Route exact path='/projects/MNmobile-gif' component={MNmobileGIF} />
+          <Route path='/projects' component={MNdesktop} />
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
@@ -39,7 +46,12 @@ class Projects extends Component {
         </div>
       </div>
       <div className='bistroBraavos wow slideInLeft'>
-        <img src={braavos} />
+        <Switch>
+          <Route exact path='/projects' component={BBdesktop} />
+          <Route exact path='/projects/BBdesktop-gif' component={BBdesktopGIF} />
+          <Route path='/projects' component={BBdesktop} />
+        </Switch>
+        {/* <img src={braavos} /> */}
         <div className='projectTitle'>
           <div className='section-left'>
             <div>bistroBraavos</div>
@@ -56,7 +68,7 @@ class Projects extends Component {
           <p>"Oyesters, Clams and Cockles!  Best in the city!"</p>
         </div>
       </div>
-      <div className='tictactoe'>
+      <div className='tictactoe wow slideInRight'>
         <img src={tictactoe} />
         <div className='projectTitle'>
           <div className='section-left'>

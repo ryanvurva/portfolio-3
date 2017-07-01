@@ -6,14 +6,43 @@
   height: 100vh;
   max-width: 1000px;
 
+  img {
+    width: 100%;
+    box-shadow: 0 0 10px #4a4a4a;
+  }
+
+  .movieNight {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1000px;
+
+    .desktopGIF {
+      background-color: rgba(192, 193, 194, 0.9);
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100;
+      overflow: hidden;
+
+    }
+  }
+
   .Mobile {
     margin: 0 auto;
     display: flex;
     justify-content: center;
 
-    img {
-      border-radius: 45px;
-    }
+    // img {
+    //   border-radius: 45px;
+    // }
   }
 
   .bistroBraavos {
@@ -32,9 +61,9 @@
     justify-content: center;
     flex-direction: column;
 
-    img {
-      width: 100%;
-    }
+    // img {
+    //   width: 100%;
+    // }
   }
 
   .projectTitle {
