@@ -7,14 +7,16 @@ import MNdesktopGIF from './MNdesktopGIF'
 import MNmobileGIF from './MNmobileGIF'
 import BBdesktop from './BBdesktop'
 import BBdesktopGIF from './BBdesktopGIF'
+import WGdesktop from './WGdesktop'
+import AEdesktop from './AEdesktop'
 
-// import braavos from '../images/bistro-braavos.png'
 import tictactoe from '../images/tictactoe.png'
+import wealthGuidance from '../images/wealthguidance.png'
 
 class Projects extends Component {
   render () {
     return <div className='Projects'>
-      <div className='movieNight wow slideInUp'>
+      <div className='movieNight wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={MNdesktop} />
           <Route exact path='/projects/mn-mobile' component={MNmobile} />
@@ -51,7 +53,6 @@ class Projects extends Component {
           <Route exact path='/projects/BBdesktop-gif' component={BBdesktopGIF} />
           <Route path='/projects' component={BBdesktop} />
         </Switch>
-        {/* <img src={braavos} /> */}
         <div className='projectTitle'>
           <div className='section-left'>
             <div>bistroBraavos</div>
@@ -84,6 +85,48 @@ class Projects extends Component {
         </div>
         <div className='projectPitch'>
           <p>"If only Rickon knew how to run in a zig-zag..."</p>
+        </div>
+      </div>
+      <div className='wealthGuidance wow slideInLeft'>
+        <Switch>
+          <Route exact path='/projects' component={WGdesktop} />
+        </Switch>
+        {/* <img src={wealthGuidance} /> */}
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div>Wealth Guidance Group LLC</div>
+          </div>
+          <NavLink to='#'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> link not available/pending approval</NavLink>
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>This was a site UI/UX redesign for a financial accounting firm.</div>
+          <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago, and recently were asked to do a site upgrade with new Wordpress features included.</div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
+        </div>
+        <div className='projectPitch'>
+          <p>"With over 30 years experience we'll ensure you always get the best guidance." | Larry L. Galantis - CFO</p>
+        </div>
+      </div>
+      <div className='adriaticExperience wow slideInRight'>
+        <Switch>
+          <Route exact path='/projects' component={AEdesktop} />
+        </Switch>
+        {/* <img src={AEdesktop} /> */}
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div>Adriatic Experience</div>
+          </div>
+          <NavLink to='https://www.adriaticexperience.com/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> www.adriaticexperience.com</NavLink>
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>On this site, I was responsible for full site content transfer to an upgraded version of Wordpress software and client functionality.</div>
+          <div>Adriatic Experience is a travel site for your dream vacation to the Adriatic Sea and surrounding areas.  Hearing about Ecliptic Designs through word of mouth, we have designed and deployed 2 versions of their site through the Wordpress software.  Check them out now for wine tours and yacht rentals all around the Adriatic Sea.</div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
+        </div>
+        <div className='projectPitch'>
+          <p>"...immerse yourself"</p>
         </div>
       </div>
     </div>
