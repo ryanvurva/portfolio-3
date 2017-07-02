@@ -11,7 +11,7 @@ import WGdesktop from './WGdesktop'
 import AEdesktop from './AEdesktop'
 
 import tictactoe from '../images/tictactoe.png'
-import wealthGuidance from '../images/wealthguidance.png'
+// import wealthGuidance from '../images/wealthguidance.png'
 
 class Projects extends Component {
   render () {
@@ -26,7 +26,8 @@ class Projects extends Component {
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div>movieNight |&nbsp;</div>
+            <div className='wow tada' data-wow-delay='800ms'>movieNight</div>
+            <div>  &nbsp;|&nbsp;</div>
             <div className='desktop-icon'>
               <NavLink to='/projects'><i className='fa fa-desktop' aria-hidden='true' /></NavLink>
             </div>
@@ -55,7 +56,7 @@ class Projects extends Component {
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div>bistroBraavos</div>
+            <div className='wow tada' data-wow-delay='300ms'>bistroBraavos</div>
           </div>
           <NavLink to='http://food-menu.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> bistrobraavos.com</NavLink>
         </div>
@@ -73,7 +74,7 @@ class Projects extends Component {
         <img src={tictactoe} />
         <div className='projectTitle'>
           <div className='section-left'>
-            <div>Tic-Tac-Toe</div>
+            <div className='wow tada' data-wow-delay='300ms'>Tic-Tac-Toe</div>
           </div>
           <NavLink to='http://tic-tac-toe.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> b@ttle-of-the-b@st@rds.tictactoe.com</NavLink>
         </div>
@@ -90,19 +91,20 @@ class Projects extends Component {
       <div className='wealthGuidance wow slideInLeft'>
         <Switch>
           <Route exact path='/projects' component={WGdesktop} />
+          <Route path='/projects' component={WGdesktop} />
         </Switch>
-        {/* <img src={wealthGuidance} /> */}
         <div className='projectTitle'>
           <div className='section-left'>
-            <div>Wealth Guidance Group LLC</div>
+            <div className='wow tada' data-wow-delay='300ms'>Wealth Guidance Group LLC</div>
           </div>
-          <NavLink to='#'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> link not available/pending approval</NavLink>
+          <NavLink to='http://www.wealthguidancegroup.com'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> original site | www.wealthguidancegroup.com</NavLink>
         </div>
         <hr />
         <div className='projectDescription'>
           <div>This was a site UI/UX redesign for a financial accounting firm.</div>
-          <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago, and recently were asked to do a site upgrade with new Wordpress features included.</div>
+          <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago (found through the link, new site design still pending review/approval), and recently were asked to do a site upgrade with new Wordpress features included.</div>
           <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
+          {/* <div>Original Site <NavLink to='http://www.wealthguidancegroup.com' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> www.wealthguidancegroup.com</NavLink> deployed 6 years ago.</div> */}
         </div>
         <div className='projectPitch'>
           <p>"With over 30 years experience we'll ensure you always get the best guidance." | Larry L. Galantis - CFO</p>
@@ -111,11 +113,11 @@ class Projects extends Component {
       <div className='adriaticExperience wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={AEdesktop} />
+          <Route path='/projects' component={AEdesktop} />
         </Switch>
-        {/* <img src={AEdesktop} /> */}
         <div className='projectTitle'>
           <div className='section-left'>
-            <div>Adriatic Experience</div>
+            <div className='wow tada' data-wow-delay='300ms'>Adriatic Experience</div>
           </div>
           <NavLink to='https://www.adriaticexperience.com/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> www.adriaticexperience.com</NavLink>
         </div>

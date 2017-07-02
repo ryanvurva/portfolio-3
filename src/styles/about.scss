@@ -54,7 +54,7 @@
     // background-repeat: no-repeat;
     // background-size: cover;
     // box-shadow: 0 0 20px black;
-    height: 100%;
+    // height: 100%;
     width: 100%;
 
     .Skills {
@@ -62,6 +62,7 @@
       height: 100%;
       min-height: 90vh;
       max-width: 1000px;
+      margin-top: 50px;
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -116,6 +117,38 @@
       }
 
       .github {
+        margin: 1em auto;
+      }
+
+      .nodeJS {
+        margin: 1em auto;
+
+        img {
+          width: 400px;
+        }
+      }
+
+      .ajax {
+        margin: 1em auto;
+
+        img {
+          width: 400px;
+        }
+      }
+
+      .jQuery {
+        margin: 1em auto;
+
+        img {
+          width: 450px;
+        }
+      }
+
+      .dreamweaver {
+        margin: 1em auto;
+      }
+
+      .atom {
         margin: 1em auto;
       }
     }
