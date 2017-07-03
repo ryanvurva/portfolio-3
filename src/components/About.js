@@ -66,10 +66,10 @@ class About extends Component {
           <div className='jQuery wow flipInX' data-wow-delay='700ms'>
             <img src={graphQL} alt='graph QL' title='graphQL' />
           </div>
-          <div className='atom wow flipInX' data-wow-delay='800ms'>
+          <div className='atom wow flipInX' data-wow-delay='600ms'>
             <img src={Atom} alt='atom' title='atom' />
           </div>
-          <div className='dreamweaver wow flipInY' data-wow-delay='600ms'>
+          <div className='dreamweaver wow flipInX' data-wow-delay='700ms'>
             <img src={Dreamweaver} alt='dreamweaver' title='adobe dreamweaver' />
           </div>
         </div>

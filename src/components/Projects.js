@@ -9,6 +9,7 @@ import BBdesktop from './BBdesktop'
 import BBdesktopGIF from './BBdesktopGIF'
 import WGdesktop from './WGdesktop'
 import AEdesktop from './AEdesktop'
+import ColorPicker from './ColorPicker'
 
 import tictactoe from '../images/tictactoe.png'
 // import wealthGuidance from '../images/wealthguidance.png'
@@ -129,6 +130,48 @@ class Projects extends Component {
         </div>
         <div className='projectPitch'>
           <p>"...immerse yourself"</p>
+        </div>
+      </div>
+      <div className='colorPicker wow slideInLeft'>
+        <Switch>
+          <Route exact path='/projects' component={ColorPicker} />
+          <Route path='/projects' component={ColorPicker} />
+        </Switch>
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div className='wow tada' data-wow-delay='300ms'>ColorBox</div>
+          </div>
+          <NavLink to='https://github.com/ryanvurva/react-colorpicker' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> GitHub repository</NavLink>
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>An HSL color picker project.</div>
+          <div>Responsive functionality to the changes you make on the sliders is controlled using Javascript and MobX for the control over the state.  Interactive and accurate code displays either 'hsl' or 'hsla' depending on the position of the alpha (opacity) setting.</div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>HTML / SASS / JS / React / MobX</span></div>
+        </div>
+        <div className='projectPitch'>
+          <p>"Go ahead, give it a try.  This is a live example!"</p>
+        </div>
+      </div>
+      <div className='colorPicker wow slideInLeft'>
+        {/* <Switch>
+          <Route exact path='/projects' component={ColorPicker} />
+          <Route path='/projects' component={ColorPicker} />
+        </Switch> */}
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div className='wow tada' data-wow-delay='300ms'>ColorBox</div>
+          </div>
+          <NavLink to='https://github.com/ryanvurva/react-colorpicker' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> GitHub repository</NavLink>
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>An HSL color picker project.</div>
+          <div>Responsive functionality to the changes you make on the sliders is controlled using Javascript and MobX for the control over the state.  Interactive and accurate code displays either 'hsl' or 'hsla' depending on the position of the alpha (opacity) setting.</div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>HTML / SASS / JS / React / MobX</span></div>
+        </div>
+        <div className='projectPitch'>
+          <p>"Go ahead, give it a try.  This is a live example!"</p>
         </div>
       </div>
     </div>
