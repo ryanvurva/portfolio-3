@@ -18,6 +18,7 @@ import tictactoe from '../images/tictactoe.png'
 class Projects extends Component {
   render () {
     return <div className='Projects'>
+      {/* movie night */}
       <div className='movieNight wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={MNdesktop} />
@@ -50,6 +51,7 @@ class Projects extends Component {
           <p>"I don't know about you, but my wife and I ask each other 2 questions every day, 'What are we going to eat?' and 'What are we going to watch?'  MovieNight helps to solve one of those questions by keeping a list of movies/shows you want to watch, that your peers can offer their opinions to help you decide before you even asked!"</p>
         </div>
       </div>
+      {/* food menu */}
       <div className='bistroBraavos wow slideInLeft'>
         <Switch>
           <Route exact path='/projects' component={BBdesktop} />
@@ -72,25 +74,8 @@ class Projects extends Component {
           <p>"Oyesters, Clams and Cockles!  Best in the city!"</p>
         </div>
       </div>
-      <div className='tictactoe wow slideInRight'>
-        <img src={tictactoe} />
-        <div className='projectTitle'>
-          <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>Tic-Tac-Toe</div>
-          </div>
-          <NavLink to='http://tic-tac-toe.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> b@ttle-of-the-b@st@rds.tictactoe.com</NavLink>
-        </div>
-        <hr />
-        <div className='projectDescription'>
-          <div>A Tic Tac Toe app project from the Iron Yard program.</div>
-          <div>One of the game projects we were given to learn how to use Javascript to manipulate data based on a series of clicks, and the current state of the board/game.</div>
-          <div className='skills-used'>&nbsp;- Designed from the ground up using : <span>HTML / CSS / SASS / JS</span></div>
-        </div>
-        <div className='projectPitch'>
-          <p>"If only Rickon knew how to run in a zig-zag..."</p>
-        </div>
-      </div>
-      <div className='wealthGuidance wow slideInLeft'>
+      {/* wealth guidance */}
+      <div className='wealthGuidance wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={WGdesktop} />
           <Route path='/projects' component={WGdesktop} />
@@ -111,7 +96,8 @@ class Projects extends Component {
           <p>"With over 30 years experience we'll ensure you always get the best guidance." | Larry L. Galantis - CFO</p>
         </div>
       </div>
-      <div className='adriaticExperience wow slideInRight'>
+      {/* adriatic experience */}
+      <div className='adriaticExperience wow slideInLeft'>
         <Switch>
           <Route exact path='/projects' component={AEdesktop} />
           <Route path='/projects' component={AEdesktop} />
@@ -132,7 +118,8 @@ class Projects extends Component {
           <p>"...immerse yourself"</p>
         </div>
       </div>
-      <div className='colorPicker wow slideInLeft'>
+      {/* color picker */}
+      <div className='colorPicker wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={ColorPicker} />
           <Route path='/projects' component={ColorPicker} />
@@ -153,7 +140,8 @@ class Projects extends Component {
           <p>"Go ahead, give it a try.  This is a live example!"</p>
         </div>
       </div>
-      <div className='taskManager wow slideInRight'>
+      {/* one list */}
+      <div className='taskManager wow slideInLeft'>
         <Switch>
           <Route exact path='/projects' component={OneList} />
           <Route path='/projects' component={OneList} />
@@ -172,6 +160,25 @@ class Projects extends Component {
         </div>
         <div className='projectPitch'>
           <p>"Add/remove a comment or task for me, or just say HI"</p>
+        </div>
+      </div>
+      {/* tic-tac-toe */}
+      <div className='tictactoe wow slideInRight'>
+        <img src={tictactoe} />
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div className='wow tada' data-wow-delay='300ms'>Tic-Tac-Toe</div>
+          </div>
+          <NavLink to='http://tic-tac-toe.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> b@ttle-of-the-b@st@rds.tictactoe.com</NavLink>
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>A Tic Tac Toe app project from the Iron Yard program.</div>
+          <div>One of the game projects we were given to learn how to use Javascript to manipulate data based on a series of clicks, and the current state of the board/game.</div>
+          <div className='skills-used'>&nbsp;- Designed from the ground up using : <span>HTML / CSS / SASS / JS</span></div>
+        </div>
+        <div className='projectPitch'>
+          <p>"If only Rickon knew how to run in a zig-zag..."</p>
         </div>
       </div>
     </div>

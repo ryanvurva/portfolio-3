@@ -32,7 +32,7 @@ class About extends Component {
         </div>
       </div>
       <div className='skills'>
-        <div className='skillsTitle wow fadeInDown' data-wow-delay='300ms'>My "Utility" Belt</div>
+        <div className='skillsTitle wow fadeInDown' data-wow-delay='200ms'>My "Utility" Belt</div>
         <div className='Skills'>
           <div className='base-languages wow flipInX' data-wow-delay='500ms'>
             <img src={codeLogos} alt='html 5, css 3, javascript es2016' title='html 5, css 3, javascript es2016' />

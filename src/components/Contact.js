@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import { withRouter } from 'react-router-dom'
 
 class Contact extends Component {
   render () {
@@ -27,18 +26,6 @@ class Contact extends Component {
             </a>
           </div>
         </div>
-        {/* <div className='social'>
-          <div className='social-icon'>
-            <a href='https://medium.com/@theeffinvurv' target='_blank'>
-              <i className='fa fa-medium' aria-hidden='true' title='medium blogs' />
-            </a>
-          </div>
-          <div className='social-icon'>
-            <a href='http://codepen.io/theVurv/' target='_blank'>
-              <i className='fa fa-codepen' aria-hidden='true' title='codepen.io' />
-            </a>
-          </div>
-        </div> */}
       </div>
       <div><h4>directly connect to me</h4></div>
       <div className='connect'>
@@ -53,6 +40,11 @@ class Contact extends Component {
           </a>
         </div>
       </div>
+      {/* <div>
+        <form>
+          <input type='text' />
+        </form>
+      </div> */}
     </div>
   }
 }

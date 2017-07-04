@@ -4,7 +4,7 @@ import _ from 'lodash'
 
 import db from '../db'
 
-import send from '../images/001-arrows.svg'
+// import send from '../images/001-arrows.svg'
 
 class OneList extends Component {
   state = {

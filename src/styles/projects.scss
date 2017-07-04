@@ -169,6 +169,7 @@
     .one-list {
       font-size: 1.2em;
       margin-right: 50px;
+      overflow-y: auto;
 
       li {
         list-style: none;
@@ -187,11 +188,13 @@
           background-color: transparent;
           color: inherit;
           cursor: pointer;
+          visibility: hidden;
         }
 
-        &:hover {
+        &:hover, &:hover button {
           background-color: lighten($theme-color, 30%);
           cursor: pointer;
+          visibility: visible;
         }
 
         &.completed span {
