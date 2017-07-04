@@ -1,9 +1,9 @@
 import * as firebase from 'firebase'
 
 const app = firebase.initializeApp({
-  apiKey: 'AIzaSyBJErtAQ1wiuhm1emxdHuRqbIZlLeeNFY8',
-  authDomain: 'task-manager-96685.firebaseapp.com',
-  databaseURL: 'https://task-manager-96685.firebaseio.com'
+  apiKey: 'AIzaSyCyJqpMLSdEF0oEUhq4z4vfTLZ3zR6pZCY',
+  authDomain: 'chatapp-11c29.firebaseapp.com',
+  databaseURL: 'https://chatapp-11c29.firebaseio.com'
 })
 
 export default app.database()

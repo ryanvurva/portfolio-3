@@ -13,6 +13,8 @@
   }
 
   .aboutMe {
+    position: relative;
+    z-index: 1;
     background-image: url('../images/gity.gif');
     background-position: center;
     background-repeat: no-repeat;
@@ -56,6 +58,13 @@
     // box-shadow: 0 0 20px black;
     // height: 100%;
     width: 100%;
+
+    .skillsTitle {
+      font-size: 4em;
+      margin-top: 20px;
+      font-variant: small-caps;
+      text-decoration: underline;
+    }
 
     .Skills {
       // margin: 5em auto;

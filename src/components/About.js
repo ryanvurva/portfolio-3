@@ -32,14 +32,15 @@ class About extends Component {
         </div>
       </div>
       <div className='skills'>
+        <div className='skillsTitle wow fadeInDown' data-wow-delay='300ms'>My "Utility" Belt</div>
         <div className='Skills'>
-          <div className='base-languages wow flipInX' data-wow-delay='400ms'>
+          <div className='base-languages wow flipInX' data-wow-delay='500ms'>
             <img src={codeLogos} alt='html 5, css 3, javascript es2016' title='html 5, css 3, javascript es2016' />
           </div>
-          <div className='sass wow flipInX' data-wow-delay='500ms'>
+          <div className='sass wow flipInX' data-wow-delay='600ms'>
             <img src={Sass} alt='sass' title='sass' />
           </div>
-          <div className='mobx wow flipInX' data-wow-delay='600ms'>
+          <div className='mobx wow flipInX' data-wow-delay='700ms'>
             <img src={MobX} alt='mob x' title='mobx' />
           </div>
           <div className='reactlogo wow flipInX' data-wow-delay='500ms'>
@@ -48,10 +49,10 @@ class About extends Component {
           <div className='wordpress wow flipInX' data-wow-delay='600ms'>
             <img src={Wordpress} alt='wordpress' title='wordpress' />
           </div>
-          <div className='slack wow flipInX' data-wow-delay='600ms'>
+          <div className='slack wow flipInX' data-wow-delay='500ms'>
             <img src={Slack} alt='slack' title='slack' />
           </div>
-          <div className='github wow flipInX' data-wow-delay='700ms'>
+          <div className='github wow flipInX' data-wow-delay='600ms'>
             <img src={GitHub} alt='github' title='github' />
           </div>
           <div className='nodeJS wow flipInX' data-wow-delay='500ms'>
@@ -60,16 +61,16 @@ class About extends Component {
           <div className='ajax wow flipInX' data-wow-delay='600ms'>
             <img src={Ajax} alt='ajax' title='ajax' />
           </div>
-          <div className='jQuery wow flipInX' data-wow-delay='600ms'>
+          <div className='jQuery wow flipInX' data-wow-delay='500ms'>
             <img src={jQuery} alt='jQuery' title='jQuery' />
           </div>
-          <div className='jQuery wow flipInX' data-wow-delay='700ms'>
+          <div className='jQuery wow flipInX' data-wow-delay='600ms'>
             <img src={graphQL} alt='graph QL' title='graphQL' />
           </div>
-          <div className='atom wow flipInX' data-wow-delay='600ms'>
+          <div className='atom wow flipInX' data-wow-delay='500ms'>
             <img src={Atom} alt='atom' title='atom' />
           </div>
-          <div className='dreamweaver wow flipInX' data-wow-delay='700ms'>
+          <div className='dreamweaver wow flipInX' data-wow-delay='600ms'>
             <img src={Dreamweaver} alt='dreamweaver' title='adobe dreamweaver' />
           </div>
         </div>

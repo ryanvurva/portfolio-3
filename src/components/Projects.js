@@ -10,6 +10,7 @@ import BBdesktopGIF from './BBdesktopGIF'
 import WGdesktop from './WGdesktop'
 import AEdesktop from './AEdesktop'
 import ColorPicker from './ColorPicker'
+import OneList from './OneList'
 
 import tictactoe from '../images/tictactoe.png'
 // import wealthGuidance from '../images/wealthguidance.png'
@@ -105,7 +106,6 @@ class Projects extends Component {
           <div>This was a site UI/UX redesign for a financial accounting firm.</div>
           <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago (found through the link, new site design still pending review/approval), and recently were asked to do a site upgrade with new Wordpress features included.</div>
           <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
-          {/* <div>Original Site <NavLink to='http://www.wealthguidancegroup.com' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> www.wealthguidancegroup.com</NavLink> deployed 6 years ago.</div> */}
         </div>
         <div className='projectPitch'>
           <p>"With over 30 years experience we'll ensure you always get the best guidance." | Larry L. Galantis - CFO</p>
@@ -153,25 +153,25 @@ class Projects extends Component {
           <p>"Go ahead, give it a try.  This is a live example!"</p>
         </div>
       </div>
-      <div className='colorPicker wow slideInLeft'>
-        {/* <Switch>
-          <Route exact path='/projects' component={ColorPicker} />
-          <Route path='/projects' component={ColorPicker} />
-        </Switch> */}
+      <div className='taskManager wow slideInRight'>
+        <Switch>
+          <Route exact path='/projects' component={OneList} />
+          <Route path='/projects' component={OneList} />
+        </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>ColorBox</div>
+            <div className='wow tada' data-wow-delay='300ms'>Task Manager</div>
           </div>
-          <NavLink to='https://github.com/ryanvurva/react-colorpicker' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> GitHub repository</NavLink>
+          {/* <NavLink to='https://github.com/ryanvurva/react-colorpicker' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> GitHub repository</NavLink> */}
         </div>
         <hr />
         <div className='projectDescription'>
-          <div>An HSL color picker project.</div>
-          <div>Responsive functionality to the changes you make on the sliders is controlled using Javascript and MobX for the control over the state.  Interactive and accurate code displays either 'hsl' or 'hsla' depending on the position of the alpha (opacity) setting.</div>
-          <div className='skills-used'>&nbsp;- Designed using : <span>HTML / SASS / JS / React / MobX</span></div>
+          <div>A glorified To-Do list.</div>
+          <div>This web app is a To-Do list with the ability to add items, mark them as complete, and delete them if they are no longer necessary.</div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>HTML / SASS / JS / React / MobX / Firebase API / Lodash</span></div>
         </div>
         <div className='projectPitch'>
-          <p>"Go ahead, give it a try.  This is a live example!"</p>
+          <p>"Add/remove a comment or task for me, or just say HI"</p>
         </div>
       </div>
     </div>
