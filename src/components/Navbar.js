@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
-// import cx from 'classnames'
 import ui from '../ui'
 
 class Navbar extends Component {

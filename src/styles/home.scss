@@ -166,50 +166,16 @@
       from{border-right-color: rgba(255,255,255,.75);}
       to{border-right-color: transparent;}
     }
+  }
+}
 
-    .fancy-btn{
-      display:inline-block;
-      position:relative;
-      padding:10px 20px;
-      border:2px solid $theme-color;
-      color:$theme-color;
-      font-family:'Cabin', sans-serif;
-      font-style:italic;
-      font-size:15px;
-      text-decoration:none;
-      margin:70px auto;
-      transition: color 0.4s;
-      opacity: 0;
-      animation: appear 1s 1 ease-in-out;
-      animation-fill-mode: forwards;
-      animation-delay: 9s;
+@media only screen and (max-width: 500px) {
+  .Home .Hello {
+    margin-top: 1em;
 
-      @keyframes appear {
-        from {opacity: 0};
-        to {opacity: 1};
-      }
-    }
-    .fancy-btn:after{
-      content:" ";
-      border:2px solid rgba(0,0,0,0);
-      display:inline-block;
-      width:100%;
-      height:100%;
-      position:absolute;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-      margin:auto;
-      transition:all 0.4s;
-    }
-    .fancy-btn:hover{
-      color:#ccc;
-    }
-    .fancy-btn:hover:after{
-      border:2px solid lighten($theme-color, 40%);
-      width: calc(100% - 10px);
-      height: calc(100% + 10px);
+    .line-2, .line-3 {
+      width: 10em;
+      font-size: 130%;
     }
   }
 }

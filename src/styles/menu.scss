@@ -1,0 +1,39 @@
+@import 'utility';
+
+.Menu {
+  aside.menuMobile {
+    // display: none;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 19;
+    background-color: transparentize($theme-color, .2);
+    width: 100vw;
+    transform: translateX(0);
+    transition: transform 200ms ease;
+
+    ul {
+      margin-top: 60px;
+      padding-left: 0;
+
+      li {
+        list-style: none;
+        padding-left: 0;
+        margin: 5px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-size: 2em;
+        }
+      }
+    }
+
+    &.hidden {
+      transform: translateX(100vw);
+    }
+  }
+}
