@@ -5,6 +5,9 @@
   padding-top: 4em;
   height: 100vh;
   max-width: 1000px;
+  position: absolute;
+  left: 0;
+  right: 0;
 
   img {
     width: 100%;
@@ -243,6 +246,47 @@
           cursor: pointer;
         }
       }
+    }
+  }
+
+  .rainGenerator {
+    width: 100%;
+    margin-bottom: 10%;
+    // height: 500px;
+
+    button {
+      transition: all 50ms linear;
+      font-size: 2em;
+      border-radius: 5px;
+      color: $theme-font-color;
+      background-color: $theme-color;
+      outline: 0;
+      border: none;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        border-color: hsl(199, 58%, 87%);
+      }
+
+      &:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 4px 4px 4px hsl(200, 69%, 24%);
+      }
+
+      &:active {
+        transform: translate(2px, 2px);
+        box-shadow: 0 0 0.1em hsl(200, 69%, 24%);
+      }
+    }
+
+    .drop {
+      // position: relative;
+      background-image: url('../images/raindrop.svg');
+      height: 43px;
+      width: 27px;
+      position: absolute;
+      top: 0;
     }
   }
 }

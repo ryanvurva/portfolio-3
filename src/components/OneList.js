@@ -50,7 +50,7 @@ class OneList extends Component {
           )}
       </ul>
       <form onSubmit={this._submit}>
-        <input type='text' ref='todoText' placeholder='add new item' required />
+        <input type='text' ref='todoText' autoCapitalize='sentences' placeholder='add new item' required />
         <button><i className='fa fa-share-square-o' aria-hidden='true' /></button>
       </form>
     </div>

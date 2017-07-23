@@ -1,10 +1,11 @@
 import { observable, computed } from 'mobx'
 
 class Store {
-  @observable hue = 0
-  @observable saturation = 50
-  @observable lightness = 50
+  @observable hue = 226
+  @observable saturation = 23
+  @observable lightness = 36
   @observable alpha = 1
+  @observable drops = []
 
   @computed
   get color () {

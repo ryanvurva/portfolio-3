@@ -37,7 +37,7 @@ header {
     }
   }
 
-  .Links {
+  .Nav {
 
     a {
       margin-right: 5px;
@@ -56,6 +56,28 @@ header {
 
       &:active {
         color: lighten($theme-color, 10%);
+      }
+    }
+  }
+
+  .mobileNav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .Navbar {
+    .Nav {
+      display: none;
+    }
+
+    .mobileNav {
+      display: flex;
+      justify-content: center;
+
+      button {
+        font-size: 2em;
+        color: inherit;
       }
     }
   }
