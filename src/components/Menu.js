@@ -10,10 +10,10 @@ class Menu extends Component {
     return <div className='Menu'>
       <aside className={cx('menuMobile', { hidden: !ui.menuShown })}>
         <ul>
-          <li><NavLink to='/about-me'>about</NavLink></li>
-          <li><NavLink to='/projects'>projects</NavLink></li>
-          <li><NavLink to='/contact'>contact</NavLink></li>
-          <li><NavLink to='/resume'>resume</NavLink></li>
+          <li onClick={() => ui.toggleMenu()}><NavLink to='/about-me'>about</NavLink></li>
+          <li onClick={() => ui.toggleMenu()}><NavLink to='/projects'>projects</NavLink></li>
+          <li onClick={() => ui.toggleMenu()}><NavLink to='/contact'>contact</NavLink></li>
+          <li onClick={() => ui.toggleMenu()}><NavLink to='/resume'>resume</NavLink></li>
         </ul>
       </aside>
     </div>

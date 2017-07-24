@@ -163,13 +163,60 @@
     }
   }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .About {
+    // margin-top: 2.5em;
+
+    .aboutMe {
+      justify-content: flex-start;
+
+      .aboutMeHeader {
+        font-size: 3em;
+        margin-top: 2em;
+      }
+
+      .description {
+        // background-color: transparent;
+        width: 90vw;
+        padding: 5px;
+        margin: 20px auto 0;
+        font-size: 1em;
+      }
+    }
+
+    .skills {
+
+      .Skills {
+
+        .base-languages img {
+          width: 17em;
+        }
+
+        .reactlogo img {
+          width: 18em;
+        }
+
+        .wordpress img,
+        .slack img,
+        .nodeJS img,
+        .ajax img,
+        .jQuery img,
+        .atom img {
+          width: 16em;
+        }
+
+
+      }
+    }
+  }
 }
