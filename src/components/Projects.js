@@ -30,8 +30,8 @@ class Projects extends Component {
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='800ms'>movieNight</div>
-            <div>  &nbsp;|&nbsp;</div>
+            <div className='title wow tada' data-wow-delay='800ms'>movieNight</div>
+            <div className='spacer-bar'>  &nbsp;|&nbsp;</div>
             <div className='desktop-icon'>
               <NavLink to='/projects'><i className='fa fa-desktop' aria-hidden='true' /></NavLink>
             </div>
@@ -61,7 +61,7 @@ class Projects extends Component {
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>bistroBraavos</div>
+            <div className='title wow tada' data-wow-delay='300ms'>bistroBraavos</div>
           </div>
           <NavLink to='http://food-menu.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> bistrobraavos.com</NavLink>
         </div>
@@ -83,7 +83,7 @@ class Projects extends Component {
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>Wealth Guidance Group LLC</div>
+            <div className='title wow tada' data-wow-delay='300ms'>Wealth Guidance Group LLC</div>
           </div>
           <NavLink to='http://www.wealthguidancegroup.com'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> original site | www.wealthguidancegroup.com</NavLink>
         </div>
@@ -105,7 +105,7 @@ class Projects extends Component {
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>Adriatic Experience</div>
+            <div className='title wow tada' data-wow-delay='300ms'>Adriatic Experience</div>
           </div>
           <NavLink to='https://www.adriaticexperience.com/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> www.adriaticexperience.com</NavLink>
         </div>
@@ -119,15 +119,37 @@ class Projects extends Component {
           <p>"...immerse yourself"</p>
         </div>
       </div>
+      {/* cde blog */}
+      <div className='project cdeBlog wow slideInRight'>
+        <Switch>
+          <Route exact path='/projects' component={WGdesktop} />
+          <Route path='/projects' component={WGdesktop} />
+        </Switch>
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div className='title wow tada' data-wow-delay='300ms'>CDE Solutions Blog</div>
+          </div>
+          <NavLink to='http://www.wealthguidancegroup.com'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> original site | www.wealthguidancegroup.com</NavLink>
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>This was a site UI/UX redesign for a financial accounting firm.</div>
+          <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago (found through the link, new site design still pending review/approval), and recently were asked to do a site upgrade with new Wordpress features included.</div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
+        </div>
+        <div className='projectPitch'>
+          <p>"With over 30 years experience we'll ensure you always get the best guidance." | Larry L. Galantis - CFO</p>
+        </div>
+      </div>
       {/* color picker */}
-      <div className='project colorPicker wow slideInRight'>
+      <div className='project colorPicker wow slideInLeft'>
         <Switch>
           <Route exact path='/projects' component={ColorPicker} />
           <Route path='/projects' component={ColorPicker} />
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>ColorBox</div>
+            <div className='title wow tada' data-wow-delay='300ms'>ColorBox</div>
           </div>
           <NavLink to='https://github.com/ryanvurva/react-colorpicker' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> GitHub repository</NavLink>
         </div>
@@ -142,14 +164,14 @@ class Projects extends Component {
         </div>
       </div>
       {/* one list */}
-      <div className='project taskManager wow slideInLeft'>
+      <div className='project taskManager wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={OneList} />
-          <Route path='/projects' component={OneList} />
+          {/* <Route path='/projects' component={OneList} /> */}
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>Task Manager</div>
+            <div className='title wow tada' data-wow-delay='300ms'>Task Manager</div>
           </div>
         </div>
         <hr />
@@ -167,7 +189,7 @@ class Projects extends Component {
         <img src={tictactoe} />
         <div className='projectTitle'>
           <div className='section-left'>
-            <div className='wow tada' data-wow-delay='300ms'>Tic-Tac-Toe</div>
+            <div className='title wow tada' data-wow-delay='300ms'>Tic-Tac-Toe</div>
           </div>
           <NavLink to='http://tic-tac-toe.ryanvurva.surge.sh/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> b@ttle-of-the-b@st@rds.tictactoe.com</NavLink>
         </div>

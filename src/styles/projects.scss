@@ -221,6 +221,7 @@
         flex: 1;
         height: 40px;
         background-color: $theme-font-color;
+        width: 100%;
 
         &:focus {
           outline: 0;
@@ -248,45 +249,27 @@
       }
     }
   }
+}
 
-  .rainGenerator {
-    width: 100%;
-    margin-bottom: 10%;
-    // height: 500px;
+@media only screen and (max-width: 500px) {
+  .Projects {
+    .project {
+      margin-bottom: 30px;
+      .projectTitle {
+        display: block;
 
-    button {
-      transition: all 50ms linear;
-      font-size: 2em;
-      border-radius: 5px;
-      color: $theme-font-color;
-      background-color: $theme-color;
-      outline: 0;
-      border: none;
-      cursor: pointer;
+        .section-left {
+          // display: block;
+          justify-content: space-around;
 
-      &:focus {
-        outline: none;
-        border-color: hsl(199, 58%, 87%);
-      }
-
-      &:hover {
-        transform: translate(-2px, -2px);
-        box-shadow: 4px 4px 4px hsl(200, 69%, 24%);
-      }
-
-      &:active {
-        transform: translate(2px, 2px);
-        box-shadow: 0 0 0.1em hsl(200, 69%, 24%);
+          .title {
+            font-size: .7em;
+          }
+        }
       }
     }
-
-    .drop {
-      // position: relative;
-      background-image: url('../images/raindrop.svg');
-      height: 43px;
-      width: 27px;
-      position: absolute;
-      top: 0;
+    .colorPicker {
+      display: none;
     }
   }
 }
