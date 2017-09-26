@@ -10,6 +10,9 @@ import BBdesktop from './BBdesktop'
 import BBdesktopGIF from './BBdesktopGIF'
 import WGdesktop from './WGdesktop'
 import AEdesktop from './AEdesktop'
+import CDEblog from './CdeBlogDesktop.js'
+import HQcde from './HQcde.js'
+import GoEBTblog from './GoEBTBlogDesktop.js'
 import ColorPicker from './ColorPicker'
 import OneList from './OneList'
 
@@ -20,7 +23,7 @@ class Projects extends Component {
   render () {
     return <div className='Projects'>
       {/* movie night */}
-      <div className='project movieNight wow slideInRight'>
+      <div className='project movieNight wow slideInRight' data-wow-delay='800ms'>
         <Switch>
           <Route exact path='/projects' component={MNdesktop} />
           <Route exact path='/projects/mn-mobile' component={MNmobile} />
@@ -53,7 +56,7 @@ class Projects extends Component {
         </div>
       </div>
       {/* food menu */}
-      <div className='project bistroBraavos wow slideInLeft'>
+      <div className='project bistroBraavos wow slideInLeft' data-wow-delay='800ms'>
         <Switch>
           <Route exact path='/projects' component={BBdesktop} />
           <Route exact path='/projects/BBdesktop-gif' component={BBdesktopGIF} />
@@ -69,14 +72,14 @@ class Projects extends Component {
         <div className='projectDescription'>
           <div>A Restaurant Menu designed for a project while at the Iron Yard.</div>
           <div>An Online Menu that pulls the data from an online database.  In this case it was with Google's Firebase Rest API service.</div>
-          <div className='skills-used'>&nbsp;- Designed from the ground up using : <span>CSS / SASS / React / MobX / JS / graphQL</span></div>
+          <div className='skills-used'>&nbsp;- Designed from the ground up using : <span>CSS / SASS / React / MobX / JS / firebase rest API</span></div>
         </div>
         <div className='projectPitch'>
           <p>"Oyesters, Clams and Cockles!  Best in the city!"</p>
         </div>
       </div>
       {/* wealth guidance */}
-      <div className='project wealthGuidance wow slideInRight'>
+      <div className='project wealthGuidance wow slideInRight' data-wow-delay='800ms'>
         <Switch>
           <Route exact path='/projects' component={WGdesktop} />
           <Route path='/projects' component={WGdesktop} />
@@ -85,12 +88,12 @@ class Projects extends Component {
           <div className='section-left'>
             <div className='title wow tada' data-wow-delay='300ms'>Wealth Guidance Group LLC</div>
           </div>
-          <NavLink to='http://www.wealthguidancegroup.com'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> original site | www.wealthguidancegroup.com</NavLink>
+          <NavLink to='http://www.wealthguidancegroup.com' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' />www.wealthguidancegroup.com</NavLink>
         </div>
         <hr />
         <div className='projectDescription'>
           <div>This was a site UI/UX redesign for a financial accounting firm.</div>
-          <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago (found through the link, new site design still pending review/approval), and recently were asked to do a site upgrade with new Wordpress features included.</div>
+          <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago and recently were asked to do a site upgrade with new Wordpress features included.</div>
           <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
         </div>
         <div className='projectPitch'>
@@ -112,33 +115,73 @@ class Projects extends Component {
         <hr />
         <div className='projectDescription'>
           <div>On this site, I was responsible for full site content transfer to an upgraded version of Wordpress software and client functionality.</div>
-          <div>Adriatic Experience is a travel site for your dream vacation to the Adriatic Sea and surrounding areas.  Hearing about Ecliptic Designs through word of mouth, we have designed and deployed 2 versions of their site through the Wordpress software.  Check them out now for wine tours and yacht rentals all around the Adriatic Sea.</div>
+          <div>After desiring the capability to add new photos and packages for their travel organization without the requirement of a web master, this site was moved over to use a new back end editor in Wordpress called "Visual Composer".  This meant rebuilding every page in the new dashboard area so that it looked and acted exactly the same as before on the front end for users.</div>
           <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
         </div>
         <div className='projectPitch'>
-          <p>"...immerse yourself"</p>
+          <p>Adriatic Experience is a travel site for your dream vacation to the Adriatic Sea and surrounding areas.  Hearing about Ecliptic Designs through word of mouth, we have designed and deployed 2 versions of their site through the Wordpress software.  Check them out now for wine tours and yacht rentals all around the Adriatic Sea.</p>
         </div>
       </div>
       {/* cde blog */}
       <div className='project cdeBlog wow slideInRight'>
         <Switch>
-          <Route exact path='/projects' component={WGdesktop} />
-          <Route path='/projects' component={WGdesktop} />
+          <Route exact path='/projects' component={CDEblog} />
+          <Route path='/projects' component={CDEblog} />
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>
             <div className='title wow tada' data-wow-delay='300ms'>CDE Solutions Blog</div>
           </div>
-          <NavLink to='http://www.wealthguidancegroup.com'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' /> original site | www.wealthguidancegroup.com</NavLink>
+          <NavLink to='https://www.cdesolutions.com/blog/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' />www.cdesolutions.com/blog</NavLink>
         </div>
         <hr />
         <div className='projectDescription'>
-          <div>This was a site UI/UX redesign for a financial accounting firm.</div>
-          <div>A local St. Pete Accounting firm that is a client of Ecliptic Designs.  We already have a site that we built for them a few years ago (found through the link, new site design still pending review/approval), and recently were asked to do a site upgrade with new Wordpress features included.</div>
+          <div>Another site UI/UX redesign, but for a POS systems company.</div>
+          <div>For this client I was asked to redesign their blog page from the default Wordpress display to better match another style that they were going for.  The company liked the redesign so much I was asked to mostly duplicate it on another one of their sites as well.</div>
           <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
         </div>
         <div className='projectPitch'>
-          <p>"With over 30 years experience we'll ensure you always get the best guidance." | Larry L. Galantis - CFO</p>
+          <p>CDE aims to eliminate the lifecycle of critical POS equipment and accessories to provide the peace of mind needed to operate and grow a successful business in a world of ever changing technology and demands.</p>
+        </div>
+      </div>
+      {/* HQ CDE solutions */}
+      <div className='project cdeBlog wow slideInLeft'>
+        <Switch>
+          <Route exact path='/projects' component={HQcde} />
+          <Route path='/projects' component={HQcde} />
+        </Switch>
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div className='title wow tada' data-wow-delay='300ms'>CDE HQ Internal Monitors</div>
+          </div>
+          {/* <NavLink to='https://www.cdesolutions.com/blog/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' />www.cdesolutions.com/blog</NavLink> */}
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>Web page used for monitors inside the HQ of CDE solutions in Georgia.</div>
+          <div>To make an easily editable and updatable screen to display info around the workplace on 50 in. monitors.  Built from scratch in a Wordpress environment, this site uses jQuery and PHP to display sets of information in the dialogue boxes and scroll through said text at a steady interval, depending on the size of the content being shown. </div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
+        </div>
+      </div>
+      {/* goEBT blog */}
+      <div className='project cdeBlog wow slideInRight'>
+        <Switch>
+          <Route exact path='/projects' component={GoEBTblog} />
+          <Route path='/projects' component={GoEBTblog} />
+        </Switch>
+        <div className='projectTitle'>
+          <div className='section-left'>
+            <div className='title wow tada' data-wow-delay='300ms'>goEBT.com Blog</div>
+          </div>
+          <NavLink to='https://www.goebt.com/news/' target='new window'><i className='fa fa-arrow-circle-o-right' aria-hidden='true' />www.goebt.com/news</NavLink>
+        </div>
+        <hr />
+        <div className='projectDescription'>
+          <div>This is the other site that I did an almost replica of the blog section.  There are some differences that they wanted to shine between the two, like the type of info that is presented on the landing page for the blog section, or there being ad spaces as well as the blog content.</div>
+          <div className='skills-used'>&nbsp;- Designed using : <span>WORDPRESS / PHP / CSS / jQuery / JS</span></div>
+        </div>
+        <div className='projectPitch'>
+          <p>goEBT exists to provide convenience and grocery store owners the opportunity to have ideal EBT card processing without all of the confusion or difficulty.</p>
         </div>
       </div>
       {/* color picker */}
@@ -167,7 +210,7 @@ class Projects extends Component {
       <div className='project taskManager wow slideInRight'>
         <Switch>
           <Route exact path='/projects' component={OneList} />
-          {/* <Route path='/projects' component={OneList} /> */}
+          <Route path='/projects' component={OneList} />
         </Switch>
         <div className='projectTitle'>
           <div className='section-left'>

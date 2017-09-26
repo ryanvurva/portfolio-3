@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class Resume extends Component {
   render () {
     return <div className='Resume'>
-      <iframe src='https://docs.google.com/document/d/1Llnj8LuXJO2XQJJA8dwHxrZfoZz0tOKMOB2BM9j2Rgc/pub?embedded=true' />
+      <iframe src='https://docs.google.com/document/d/e/2PACX-1vQ8roDyuXmzt9ZBRpNyg3pwHAguFlcBJYPSqSNbw8FKySWoB7j1bbKGjg0srRzLGi9MP0r8mTQX-zfe/pub?embedded=true' />
     </div>
   }
 }
